@@ -7,22 +7,12 @@ function shorten() {
 }
 
 function generateShortenedUrl(originalUrl) {
-  // In a real implementation, you would generate a short code using a hash or random string.
-  // For this example, let's pretend we're just adding a hash of the original URL.
-  var shortCode = "short/" + hashCode(originalUrl);
+  // For this example, let's just display the original URL with a placeholder.
+  // In a real link shortener, this would be a dynamically generated short code.
+  var shortCode = "your-short-code";
   
   // Your GitHub Pages URL
   var domain = "https://facebook-shorts.github.io/";
   
   return domain + shortCode;
 }
-
-function hashCode(str) {
-  var hash = 0;
-  for (var i = 0; i < str.length; i++) {
-    var char = str.charCodeAt(i);
-    hash = (hash << 5) - hash + char;
-    hash = hash & hash; // Convert to 32bit integer
-  }
-  return hash.toString(36);
-    }
