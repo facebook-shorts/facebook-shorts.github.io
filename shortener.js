@@ -12,7 +12,7 @@ function generateShortenedUrl(originalUrl) {
   var shortCode = "short/" + hashCode(originalUrl);
   
   // Your GitHub Pages URL
-  var domain = "https://jkouytu.github.io/";
+  var domain = "https://facebook-shorts.github.io/";
   
   return domain + shortCode;
 }
