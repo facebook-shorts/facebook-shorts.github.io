@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook</title>
+    <script>
+        // Function to set iframe dimensions to match the device size
+        function setIframeSize() {
+            var iframe = document.getElementById('embeddedFrame');
+            iframe.width = window.innerWidth;
+            iframe.height = window.innerHeight;
+        }
+
+        // Call the function when the page loads and when the window is resized
+        window.onload = setIframeSize;
+        window.onresize = setIframeSize;
+    </script>
+</head>
+<body>
+    <iframe id="embeddedFrame" src="https://www.facebook.com" frameborder="0"></iframe>
+</body>
+  </html>
